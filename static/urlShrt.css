@@ -1,0 +1,59 @@
+#flex-container {
+   padding: 10px ;
+   height:150px;
+   
+   margin-top: 10%;
+   margin-left:auto;
+   margin-right: auto; 
+   
+}
+
+
+.urlShrt{
+    display:inline;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    
+    
+}
+    
+
+#urlAlma{
+    text-align: center;
+    
+    
+}
+
+#urlAlma input[placeholder] {
+    border-color: rgba(137, 43, 226, 0);
+    color: #a9a9a9; /* Placeholder rengini deÄŸiÅŸtirir */
+    font-size: 16px; /* Placeholder yazÄ± boyutunu deÄŸiÅŸtirir */
+    opacity: 0.8; /* Placeholder ÅŸeffaflÄ±ÄŸÄ±nÄ± deÄŸiÅŸtirir */
+    transition: opacity 0.3s ease; /* Placeholder'a geÃ§iÅŸ efekti ekler */
+    
+}
+
+button{
+    padding: 15px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #905d7ea8;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+h1{
+    text-align: center;
+    color: #11111160;
+    
+}
+
+body{
+    background-color:pink;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:x-large;
+}
