@@ -11,13 +11,21 @@
  
          <h1>URL Shortener</h1>
 
-             <form id="urlAlma">
-                 <input type="url" placeholder="Enter Link Here">
-                 <button type="submit">Shorten</button>
-             </form>
-            
-             
+         <form id="urlAlma" action="{{ url_for('short_url') }}" method="POST">
+            <input type="url" name="url" placeholder="Enter Link Here" required> <br><br>
+            <button type="submit">Shorten</button>
+        </form>
+          
          </div>
-     </div>
+      </div>
+
+
+    <footer>
+        <p>© 2024 Directed By, RG </p>
+    </footer>
+    
+
+
+
 </body>
 </html>
