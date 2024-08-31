@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='urlShrt.css') }}">
+    <title>RG</title>
+
+
+</head>
+<body>
+
+
+    <script>
+        function copyTıkla() {
+
+            var urlInput = document.getElementById("urlInput");
+            
+            urlInput.select();
+            urlInput.setSelectionRange(0, 99999); // Mobil cihazlar için
+    
+            document.execCommand("copy");  //Seçili metni panoya kopyalar.
+    
+            // İsteğe bağlı: Kullanıcıya kopyalandığını göster
+            alert(" " + urlInput.value);
+        }
+
+    </script>
+    
+    <div id="flex-container">
+        <div class="urlShrt">
+ 
+         <h1>URL Shortener</h1>
+
+         <form id="urlAlma" action="/shortUrl" method="POST">
+            <input type="url" id="urlInput" value="{{ short_url }}"  placeholder="Enter Link Here" required> <br><br>
+            <button type="button" onclick="copyTıkla()">Copy</button>
+        </form>
+          
+          
+         </div>
+         <a href="/">Back to Home</a>
+      </div>
+
+
+
+<footer>  
+        <p>© 2024 Directed By, RG </p>
+</footer>
+
+
+
+</body>
+</html>
